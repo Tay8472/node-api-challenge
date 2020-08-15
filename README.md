@@ -38,15 +38,25 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
--   [ ] Mention two parts of Express that you learned about this week.
+-   [ ] The core features of Node.js and Express and why they are useful.
 
--   [ ] Describe Middleware?
+    <!-- Node.js utilizes javascript to create a server, its also asynchronous which allows it to process large amounts of data. On top of this, Express is a repository to make writing Node.js much more simple and streamlined. -->
 
--   [ ] Describe a Resource?
+-   [ ] Understand and explain the use of Middleware?
 
--   [ ] What can the API return to help clients know if a request was successful?
+    <!-- Middleware is used to inject a function (or functions) of code into the existing processes to execute extra code, however, unlike redux middleware, most express and node middleware has a specific order in which they are used. -->
 
--   [ ] How can we partition our application into sub-applications?
+-   [ ] The basic principles of the REST architectural style.
+
+    <!-- Stateless (technically other than res, req acting like one), is a client server architecture, everything has an ID, caching, layered system, code on demand, and uniform interfaces. -->
+
+-   [ ] Understand and explain the use of Express Routers.
+
+    <!-- Routers make it essentially more easy to organize code, separating different sub-applications to make one application. Similar to creating components but for backend. -->
+
+-   [ ] Describe tooling used to manually test the correctness of an API.
+
+    <!-- In this instance for class we use Insomnia, which tests each functionality of your CRUD operations independently to ensure they are functioning correctly. There are other programs you can use as well I believe. -->
 
 ## Minimum Viable Product
 

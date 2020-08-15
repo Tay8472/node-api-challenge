@@ -12,3 +12,25 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Go code!
 */
+
+let express = require("express");
+let actionsRouter = require("./data/routers/actionsRouter");
+let projectsRouter = require("./data/routers/projectsRouter");
+
+let server = express();
+let port = 7117;
+
+server.use(express.json());
+
+server.use(actionsRouter);
+server.use(projectsRouter);
+
+server.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to Pillar of Autumn API",
+  });
+});
+
+server.listen(port, () => {
+  console.log(`Spartan 117 reporting server start, (port ${port})`);
+});
